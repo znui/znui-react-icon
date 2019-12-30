@@ -1,0 +1,86 @@
+.zr-svg-icon-selector {
+    .selector{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0px 3px;
+        .search-icon{
+            position: relative;
+            left: 22px;
+            top: 2px;
+            color: #8c8c8c;
+        }
+
+        input{
+            background-color: #fff!important;
+            border-radius: 50px;
+            padding: 4px 6px 4px 24px;
+            outline: none;
+            line-height: 20px;
+            border: 0px;
+            font-size: 14px;
+            box-sizing: border-box;
+            -webkit-transition: all ease-in-out 0.15s;
+            -o-transition: all ease-in-out 0.15s;
+            transition: all ease-in-out 0.15s;
+            resize: none;
+            background-color: #FFF !important;
+            border: 1px solid transparent;
+            border: 1px solid #d9d9d9;
+            color: #4c4c4c;
+            &:hover{
+                border-color:#40a9ff;
+            }
+            &:focus{
+                border-color:#40a9ff;
+                border-right-width:1px !important;
+                outline:0;
+                -webkit-box-shadow:0 0 0 2px rgba(24,144,255,0.2);box-shadow:0 0 0 2px rgba(24,144,255,0.2);
+            }
+        }
+    }
+
+    .icons{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        .icon{
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e2e2e2;
+            padding: 2px;
+            border-radius: 2px;
+            cursor: pointer;
+            min-width: 24px;
+            min-height: 24px;
+            .svg-inline--fa{
+                
+    
+            }
+            .icon-label{
+                font-size: 10px;
+            }
+            &:hover{
+                background-color: #ece5e5;
+                color: #1394f0;
+                &>.svg-inline--fa{
+                    color: #1394f0;
+                }
+            }
+            &.curr{
+                background-color: #0491f5;
+                color: #FFF;
+                
+                &>.svg-inline--fa{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}

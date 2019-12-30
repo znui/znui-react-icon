@@ -1,0 +1,77 @@
+.zr-svg-icon-list {
+    overflow: auto;
+    .type-container{
+        display: flex;
+        justify-content: center;
+        .type-list{
+            list-style: none;
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+            .type-item {
+                background-color: #f7f1f1;
+                padding: 5px 0px;
+                min-width: 80px;
+                text-align: center;
+                cursor: pointer;
+                border-left: 1px solid #eae9e9;
+                &:first-child{
+                    border-left-color: transparent;
+                    border-radius: 5px 0px 0px 5px;
+                }
+                &:last-child{
+                    border-radius: 0px 5px 5px 0px;
+                }
+                &.curr{
+                    background-color: #196fad !important;
+                    color: #FFF !important;
+                    font-weight: bold;
+                }
+                &:hover{
+                    background-color: #f1e8e8;
+                }
+            }
+        }
+    }
+    .icon-container{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        .icon{
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e2e2e2;
+            padding: 2px;
+            border-radius: 2px;
+            cursor: pointer;
+            min-width: 24px;
+            min-height: 24px;
+            .svg-inline--fa{
+                
+    
+            }
+            .icon-label{
+                font-size: 10px;
+            }
+            &:hover{
+                background-color: #ece5e5;
+                color: #1394f0;
+                &>.svg-inline--fa{
+                    color: #1394f0;
+                }
+            }
+            &.curr{
+                background-color: #0491f5;
+                color: #FFF;
+                
+                &>.svg-inline--fa{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
