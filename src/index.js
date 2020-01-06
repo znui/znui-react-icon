@@ -1,7 +1,4 @@
-if(!znui){
-    require('znui-react');
-}
-
+require('znui-react');
 module.exports = {
     SVGIcon: require('./SVGIcon'),
     SVGIconList: require('./SVGIconList'),
