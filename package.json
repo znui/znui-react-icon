@@ -1,6 +1,6 @@
 {
   "name": "znui-react-icon",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Web icon component.",
   "main": "development.js",
   "scripts": {
