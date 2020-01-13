@@ -1,6 +1,9 @@
 require('znui-react');
 module.exports = {
     SVGIcon: require('./SVGIcon'),
+    BrandsSVGIcon: require('./BrandsSVGIcon'),
+    RegularSVGIcon: require('./RegularSVGIcon'),
+    SolidSVGIcon: require('./SolidSVGIcon'),
     SVGIconList: require('./SVGIconList'),
     SVGIconSelector: require('./SVGIconSelector'),
     Icons: require('./Icons'),

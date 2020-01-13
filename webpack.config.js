@@ -27,8 +27,10 @@ module.exports = {
         "react-dom": "ReactDOM",
         "znui-react": "zr",
         "@fortawesome/fontawesome-svg-core": "fsc",
-        "@fortawesome/free-solid-svg-icons": "fssi",
         "@fortawesome/react-fontawesome": "rf",
+        "@fortawesome/free-solid-svg-icons": "fssi",
+        "@fortawesome/free-brands-svg-icons": "fbsi",
+        "@fortawesome/free-regular-svg-icons": 'frsi'
     },
     output: {
         path: path.join(process.cwd(), 'dist'),

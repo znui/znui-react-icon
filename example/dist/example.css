@@ -117,10 +117,12 @@
   box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
 }
 .zr-svg-icon-selector .icons {
-  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  max-height: 200px;
+  overflow: auto;
+  padding: 5px;
 }
 .zr-svg-icon-selector .icons .icon {
   margin: 2px;

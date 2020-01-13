@@ -4,13 +4,18 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 var React = znui.React || require('react');
 
-module.exports = React.createClass({
-  displayName: 'ZRFAIcon',
+var ReactFA = require('@fortawesome/react-fontawesome');
+
+var SolidSVGIcons = require('@fortawesome/free-solid-svg-icons').fas;
+
+var SolidSVGIcon = React.createClass({
+  displayName: 'ZRSolidSVGIcon',
   render: function render() {
-    return React.createElement("span", _extends({}, this.props, {
-      className: "zr-fa-icon " + this.props.className
-    }), React.createElement("i", {
-      className: "fa " + this.props.icon
+    var _icon = this.props.icon;
+    return React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
+      icon: SolidSVGIcons[_icon]
     }));
   }
 });
+SolidSVGIcon.ICONS = SolidSVGIcons;
+module.exports = SolidSVGIcon;

@@ -9,7 +9,7 @@ var SVGIcon = require('./SVGIcon');
 var FAIcon = require('./FAIcon');
 
 module.exports = React.createClass({
-  displayName: 'Icons',
+  displayName: 'ZRIcons',
   __itemRender: function __itemRender(item, index) {
     if (item.type == 'svg') {
       return React.createElement(SVGIcon, _extends({
