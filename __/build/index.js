@@ -1,7 +1,5 @@
 "use strict";
 
-require('znui-react');
-
 module.exports = {
   SVGIcon: require('./SVGIcon'),
   BrandsSVGIcon: require('./BrandsSVGIcon'),

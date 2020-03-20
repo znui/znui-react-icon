@@ -6,7 +6,7 @@ var RegularSVGCore = require('@fortawesome/free-regular-svg-icons');
 var _icons = zn.extend({}, SolidSVGIcons.fas, BrandsSVGCore.fab, RegularSVGCore.fbr);
 
 var SVGIcon = React.createClass({
-	displayName:'SVGIcon',
+	displayName:'ZRSVGIcon',
 	render: function(){
 		var _icon = this.props.icon;
 

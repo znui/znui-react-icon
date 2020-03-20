@@ -6,16 +6,22 @@ var React = znui.React || require('react');
 
 var ReactFA = require('@fortawesome/react-fontawesome');
 
-var BrandsSVGIcons = require('@fortawesome/free-brands-svg-icons').fab;
+var SolidSVGIcons = require('@fortawesome/free-solid-svg-icons');
 
-var BrandsSVGIcon = React.createClass({
-  displayName: 'BrandsSVGIcon',
+var BrandsSVGCore = require('@fortawesome/free-brands-svg-icons');
+
+var RegularSVGCore = require('@fortawesome/free-regular-svg-icons');
+
+var _icons = zn.extend({}, SolidSVGIcons.fas, BrandsSVGCore.fab, RegularSVGCore.fbr);
+
+var SVGIcon = React.createClass({
+  displayName: 'ZRSVGIcon',
   render: function render() {
     var _icon = this.props.icon;
     return React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
-      icon: BrandsSVGIcons[_icon]
+      icon: _icons[_icon]
     }));
   }
 });
-BrandsSVGIcon.ICONS = BrandsSVGIcons;
-module.exports = BrandsSVGIcon;
+SVGIcon.ICONS = _icons;
+module.exports = SVGIcon;

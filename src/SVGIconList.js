@@ -5,7 +5,7 @@ var BrandsSVGCore = require('@fortawesome/free-brands-svg-icons');
 var RegularSVGCore = require('@fortawesome/free-regular-svg-icons');
 
 module.exports = React.createClass({
-	displayName:'SVGIconList',
+	displayName:'ZRSVGIconList',
 	getDefaultProps: function (){
 		return {
 			types: ['solid', 'brands', 'regular']
