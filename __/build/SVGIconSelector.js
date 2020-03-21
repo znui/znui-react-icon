@@ -4,12 +4,10 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 var React = znui.React || require('react');
 
-var SVGIconList = require('./SVGIconList');
-
 var SVGIcon = require('./SVGIcon'),
     _ICONS = SVGIcon.ICONS;
 
-var SVGIconSelector = React.createClass({
+module.exports = React.createClass({
   displayName: 'ZRSVGIconSelector',
   getInitialState: function getInitialState() {
     return {
@@ -56,47 +54,41 @@ var SVGIconSelector = React.createClass({
     this.props.onChange && this.props.onChange(item, index, this);
   },
   render: function render() {
-    return React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       className: znui.react.classname('zr-svg-icon-selector', this.props.className),
       style: this.props.style
-    }, React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       className: "selector"
-    }, React.createElement(SVGIcon, {
+    }, /*#__PURE__*/React.createElement(SVGIcon, {
       className: "icon",
       icon: this.state.value
-    }), React.createElement("div", {
+    }), /*#__PURE__*/React.createElement("div", {
       className: "input-selector"
-    }, React.createElement(SVGIcon, {
+    }, /*#__PURE__*/React.createElement(SVGIcon, {
       className: "search-icon",
       icon: "faSearch"
-    }), React.createElement("input", {
+    }), /*#__PURE__*/React.createElement("input", {
       value: this.state.searchKey,
       className: "search-input",
       onChange: this.__onInputChange,
       onKeyUp: this.__onInputKeyUp,
       type: "search",
       name: "icon"
-    }))), this.state.icons && !!this.state.icons.length && React.createElement("div", {
+    }))), this.state.icons && !!this.state.icons.length && /*#__PURE__*/React.createElement("div", {
       className: "icons"
     }, this.state.icons.map(function (item, index) {
       var _this = this;
 
-      return React.createElement("div", {
+      return /*#__PURE__*/React.createElement("div", {
         title: item,
         className: "icon " + (this.props.value == item ? 'curr' : ''),
         onClick: function onClick() {
           return _this.__onIconClick(item, index);
         }
-      }, React.createElement(SVGIcon, _extends({}, this.props.iconProps, {
+      }, /*#__PURE__*/React.createElement(SVGIcon, _extends({}, this.props.iconProps, {
         key: index,
         icon: item
       })));
     }.bind(this))));
   }
 });
-
-if (znui.react.input && znui.react.input.isZNStaticObject && znui.react.input.isZNStaticObject()) {
-  znui.react.input.register(SVGIconSelector, 'SVGIconSelector');
-}
-
-module.exports = SVGIconSelector;

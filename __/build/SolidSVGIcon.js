@@ -12,7 +12,7 @@ var SolidSVGIcon = React.createClass({
   displayName: 'ZRSolidSVGIcon',
   render: function render() {
     var _icon = this.props.icon;
-    return React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
+    return /*#__PURE__*/React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
       icon: SolidSVGIcons[_icon]
     }));
   }

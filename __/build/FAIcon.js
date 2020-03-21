@@ -7,9 +7,9 @@ var React = znui.React || require('react');
 module.exports = React.createClass({
   displayName: 'ZRFAIcon',
   render: function render() {
-    return React.createElement("span", _extends({}, this.props, {
+    return /*#__PURE__*/React.createElement("span", _extends({}, this.props, {
       className: "zr-fa-icon " + this.props.className
-    }), React.createElement("i", {
+    }), /*#__PURE__*/React.createElement("i", {
       className: "fa " + this.props.icon
     }));
   }

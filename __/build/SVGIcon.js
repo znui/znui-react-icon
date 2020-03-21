@@ -18,7 +18,7 @@ var SVGIcon = React.createClass({
   displayName: 'ZRSVGIcon',
   render: function render() {
     var _icon = this.props.icon;
-    return React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
+    return /*#__PURE__*/React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props, {
       icon: _icons[_icon]
     }));
   }

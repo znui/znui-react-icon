@@ -1,9 +1,8 @@
 var React = znui.React || require('react');
-var SVGIconList = require('./SVGIconList');
 var SVGIcon = require('./SVGIcon'),
 	_ICONS = SVGIcon.ICONS;
 
-var SVGIconSelector = React.createClass({
+module.exports = React.createClass({
 	displayName:'ZRSVGIconSelector',
 	getInitialState:function(){
 		return {
@@ -69,9 +68,3 @@ var SVGIconSelector = React.createClass({
 		);
 	}
 });
-
-if(znui.react.input && znui.react.input.isZNStaticObject && znui.react.input.isZNStaticObject()){
-	znui.react.input.register(SVGIconSelector, 'SVGIconSelector');
-}
-
-module.exports = SVGIconSelector;

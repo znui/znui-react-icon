@@ -55,35 +55,35 @@ module.exports = React.createClass({
     this.props.onIconClick && this.props.onIconClick(item, index);
   },
   render: function render() {
-    return React.createElement("div", {
+    return /*#__PURE__*/React.createElement("div", {
       className: znui.react.classname('zr-svg-icon-list', this.props.className),
       style: this.props.style
-    }, React.createElement("div", {
+    }, /*#__PURE__*/React.createElement("div", {
       className: "type-container"
-    }, React.createElement("ul", {
+    }, /*#__PURE__*/React.createElement("ul", {
       className: "type-list"
     }, this.props.types.map(function (type, index) {
       var _this = this;
 
-      return React.createElement("li", {
+      return /*#__PURE__*/React.createElement("li", {
         className: "type-item " + (this.state.type == type ? 'curr' : ''),
         onClick: function onClick() {
           return _this.__onTypeClick(type, index);
         },
         key: index
       }, type);
-    }.bind(this)))), React.createElement("div", {
+    }.bind(this)))), /*#__PURE__*/React.createElement("div", {
       className: "icon-container"
     }, this.state.icons.map(function (item, index) {
       var _this2 = this;
 
-      return React.createElement("div", {
+      return /*#__PURE__*/React.createElement("div", {
         title: item.key,
         className: "icon " + (this.props.value == item.key ? 'curr' : ''),
         onClick: function onClick() {
           return _this2.__onIconClick(item, index);
         }
-      }, React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props.iconProps, {
+      }, /*#__PURE__*/React.createElement(ReactFA.FontAwesomeIcon, _extends({}, this.props.iconProps, {
         key: index,
         icon: item
       })));
